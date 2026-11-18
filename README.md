@@ -4,6 +4,7 @@ Machine-learning surrogates of 70 MPa hydrogen fills of a 99 L Type 3 / Type 4 t
 station-level energy estimate, with a small Streamlit app. Code and data accompanying the manuscript
 
 > A. AitAkka N'alla, M. El Alami, A. Gounni. *Machine-learning surrogates for the safety-limited end state of hydrogen refueling in Type 3 and Type 4 tanks: off-grid and extrapolation validation of six models, and precooling set-points at the 85 °C limit* (submitted).  
+> Live app: https://h2surrogate.streamlit.app/  
 > Repository DOI: *(to be added after the Zenodo release)*
 
 **Research prototype.** The surrogates reproduce simulations, not measurements. They cover one tank geometry, an initial state of 2 MPa and 25 °C, ambient 20–50 °C,

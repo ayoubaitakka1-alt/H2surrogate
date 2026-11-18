@@ -9,5 +9,6 @@ authors:
     given-names: "Mustapha"
   - family-names: "Gounni"
     given-names: "Ayoub"
+url: "https://h2surrogate.streamlit.app/"
 repository-code: "https://github.com/ayoubaitakka1-alt/H2surrogate"
 license: MIT
