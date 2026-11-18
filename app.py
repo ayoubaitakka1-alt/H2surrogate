@@ -17,9 +17,7 @@ def city_data(name):
 
 
 st.title('Hydrogen fill surrogates (70 MPa, 99 L tank)')
-st.warning('**Research prototype.** The surrogates reproduce H2FillS simulations of one 99 L tank, started at 2 MPa and 25 °C, '
-           'and have not been validated against measurements. Results are not a basis for operating a station or a vehicle. '
-           'The surrogate range is ambient 20–50 °C, delivery −40 to +40 °C, ramp rate 10–26 MPa/min.')
+st.caption('Research prototype: reproduces H2FillS simulations (99 L tank, 2 MPa and 25 °C start); not validated against measurements; not for operating a station or vehicle. See the About tab.')
 M = models()
 tab1, tab2, tab3, tab4 = st.tabs(['Predict a fill', 'Set-point finder', 'Station estimate', 'About'])
 
@@ -124,6 +122,8 @@ with tab4:
 **What this is.** Surrogates fitted to 1134 H2FillS simulations (2 tanks × 7 ambient temperatures × 9 delivery temperatures × 9 ramp rates) of a 70 MPa fill of a 99 L tank
 started at 2 MPa and 25 °C, ending at 70 MPa. Models: support-vector regression and a Gaussian process for the peak gas temperature, and a multi-layer perceptron for the
 state of charge and pressure at the 85 °C limit.
+
+**Range of validity.** Ambient 20–50 °C, delivery −40 to +40 °C, ramp rate 10–26 MPa/min, one 99 L tank started at 2 MPa and 25 °C.
 
 **What it is not.** It is not validated against measured fills, it ignores initial tank state, volume, humidity and station hardware, and it must not be used to operate a
 station or a vehicle. Inputs outside the training range are extrapolation (tree ensembles in the paper under-predicted by 2.5 °C there; kernel methods do better but are not safe either).
